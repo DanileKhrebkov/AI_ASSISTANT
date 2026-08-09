@@ -1,6 +1,46 @@
 [package]
 name = "voice-assistant-websocket"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
+# WebSocket
+tokio = { version = "1.35", features = ["full"] }
+tokio-tungstenite = "0.21"
+futures-util = "0.3"
+
+# HTTP клиент для Ollama
+reqwest = { version = "0.11", features = ["json", "stream"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Аудио
+cpal = "0.15.3"
+hound = "3.5.1"
+rodio = "0.17.3" 
+tempfile = "3.8" 
+
+# Whisper STT
+whisper-rs = "0.16.0"
+
+
+
+
+# Утилиты
+anyhow = "1.0"
+thiserror = "1.0"
+log = "0.4"
+env_logger = "0.10"
+regex = "1.10"
+dotenv = "0.15"
+async-trait = "0.1"
+byteorder = "1.5"
+base64 = "0.21"
+
+[dev-dependencies]
+tokio = { version = "1.35", features = ["full", "rt"] }
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3

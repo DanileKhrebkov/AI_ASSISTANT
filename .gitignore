@@ -1,1 +1,98 @@
-/target
+# Rust
+/target/
+**/*.rs.bk
+*.pdb
+*.exp
+*.lib
+*.dll
+*.so
+*.dylib
+*.a
+*.exe
+
+# Cargo
+Cargo.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.iml
+*.ipr
+*.iws
+
+# Проект
+.env
+.env.local
+.env.*.local
+*.log
+*.pid
+*.pid.lock
+
+# Модели
+/models/
+*.bin
+*.gguf
+*.ggml
+*.pt
+*.pth
+*.onnx
+
+# Аудио
+*.wav
+*.mp3
+*.ogg
+*.flac
+*.m4a
+*.aac
+*.opus
+
+# Временные файлы
+/tmp/
+temp/
+*.tmp
+*.temp
+*.cache
+
+# Докер
+.dockerignore
+docker-compose.override.yml
+
+# Текст
+*.txt
+*.md.backup
+
+# Ос
+Thumbs.db
+desktop.ini
+*.DS_Store
+
+# Сборка
+/build/
+/dist/
+*.o
+*.so
+*.dylib
+*.dll
+
+# Логи
+/logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Отчеты о тестах
+*.prof
+*.gcda
+*.gcno
+*.gcov
+
+# Конфигурация пользователя
+*.local
+*.user
+*.user.*
+*.rs.bak
