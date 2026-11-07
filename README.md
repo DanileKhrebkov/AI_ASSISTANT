@@ -47,7 +47,7 @@
 
 ### 1. Клонирование репозитория
 ```bash
-git clone https://github.com/hogintosh/voice-assistant.git
+git clone https://github.com/hogintosh/ai-assistant.git
 cd voice-assistant-websocket
 ```
 
